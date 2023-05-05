@@ -17,6 +17,11 @@ public class Main {
         Circle circle = new Circle();
         ShapeDecorator circleWithBorder = new BorderDecorator(circle) ;
         circleWithBorder.draw();
+
+        //let's create a triangle with a border
+        Triangle triangle = new Triangle();
+        ShapeDecorator triangleWithBorder = new BorderDecorator(triangle) ;
+        triangleWithBorder.draw();
     }
 }
 
