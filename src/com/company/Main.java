@@ -14,19 +14,24 @@ public class Main {
         triangle.draw(); */
 
         //let's create a circle with a border
-        Circle circle = new Circle();
+        Shape circle = new Circle();
         ShapeDecorator circleWithBorder = new BorderDecorator(circle) ;
         circleWithBorder.draw();
 
         //let's create a triangle with a border
-        Triangle triangle = new Triangle();
+        Shape triangle = new Triangle();
         ShapeDecorator triangleWithBorder = new BorderDecorator(triangle) ;
         triangleWithBorder.draw();
 
         //let's create a rectangle with a border
-        Rectangle rectangle = new Rectangle();
+        Shape rectangle = new Rectangle();
         ShapeDecorator rectangleWithBorder = new BorderDecorator(rectangle) ;
         rectangleWithBorder.draw();
+
+        //let's create a red circle
+        Shape circle1 = new Circle();
+        ShapeDecorator redCircle = new ColorDecorator(circle1,"Red") ;
+        redCircle.draw();
     }
 }
 
