@@ -37,6 +37,13 @@ public class Main {
         Shape rectangle1 = new Rectangle();
         ShapeDecorator blueRectangle = new ColorDecorator(rectangle1,"Blue") ;
         blueRectangle.draw();
+
+        //let's create a bordered red triangle
+        Shape triangle1 = new Triangle();
+        Shape borderedTriangle = new BorderDecorator(triangle1) ;
+        Shape redBorderedTriangle = new ColorDecorator(borderedTriangle,"Red") ;
+        redBorderedTriangle.draw();
+
     }
 }
 
