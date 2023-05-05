@@ -22,6 +22,11 @@ public class Main {
         Triangle triangle = new Triangle();
         ShapeDecorator triangleWithBorder = new BorderDecorator(triangle) ;
         triangleWithBorder.draw();
+
+        //let's create a rectangle with a border
+        Rectangle rectangle = new Rectangle();
+        ShapeDecorator rectangleWithBorder = new BorderDecorator(rectangle) ;
+        rectangleWithBorder.draw();
     }
 }
 
