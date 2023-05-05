@@ -32,6 +32,11 @@ public class Main {
         Shape circle1 = new Circle();
         ShapeDecorator redCircle = new ColorDecorator(circle1,"Red") ;
         redCircle.draw();
+
+        //let's create a blue rectangle
+        Shape rectangle1 = new Rectangle();
+        ShapeDecorator blueRectangle = new ColorDecorator(rectangle1,"Blue") ;
+        blueRectangle.draw();
     }
 }
 
